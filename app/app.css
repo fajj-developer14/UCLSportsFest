@@ -1,15 +1,59 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-montserrat: "Montserrat Variable", var(--font-sans), sans-serif;
 }
 
 html,
 body {
   @apply bg-white dark:bg-gray-950;
-
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat);
+}
+
+@media screen and (max-width: 639px) {
+  nav li:not(:last-child) {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  nav li:last-child {
+    padding-top: 8px;
+  }
+}
+
+#HeroBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-gray-800);
+  background-image: radial-gradient(
+    circle at center,
+    #000 0.1px,
+    transparent 3px
+  );
+  background-size: 4px 4px;
+  opacity: 55%;
+  animation: moveSpots 15s linear infinite;
+}
+
+@keyframes moveSpots {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 100px 100px;
   }
 }
