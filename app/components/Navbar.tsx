@@ -4,14 +4,17 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const categories = ["Home", "Categories", "Schedule", "Register", "Contact"];
   return (
-    <nav className="w-full bg-rose-950 opacity-85 backdrop-blur-xl px-4 py-4 font-montserrat uppercase absolute top-0 left-0 right-0 z-50">
-      <div className="container mx-auto flex flex-col items-center overflow-hidden sm:flex-row sm:justify-between">
+    <nav className="w-full bg-rose-950 opacity-85 backdrop-blur-xl px-4 py-4 font-montserrat uppercase fixed top-0 left-0 right-0 z-50">
+      <div className="container mx-auto flex flex-col items-center overflow-hidden sm:flex-row sm:justify-between sm:items-center">
         <div className="flex justify-between items-center space-x-4 w-full">
           <h1 className="uppercase font-medium text-lg tracking-wider text-white">
             UCL SportsFest
+            <span className="text-xs ml-1 text-rose-500 animate-pulse">
+              '25
+            </span>
           </h1>
           <button
-            className="w-6 sm:hidden"
+            className="w-6 sm:hidden cursor-pointer"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
@@ -24,13 +27,13 @@ function Navbar() {
           </button>
         </div>
         <ul
-          className={`text-center w-full tracking-wider text-xs sm:flex sm:items-center justify-end transition-all duration-200 ease-in-out ${isMenuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0 sm:max-h-none sm:opacity-100 "} `}
+          className={`text-center w-full tracking-wider text-xs sm:flex sm:translate-y-0.5 lg:text-sm justify-end transition-all duration-250 ease-in-out ${isMenuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0 sm:max-h-none sm:opacity-100 "} `}
         >
           {categories.map((c) => (
-            <li className="w-full sm:w-auto sm:pl-4 md:pl-6">
+            <li className="w-full sm:w-auto sm:pl-2 md:pl-5">
               <a
                 href="#"
-                className="inline-block text-slate-200 cursor-pointer hover:text-white hover:scale-110 transition-all duration-100 ease-in-out"
+                className="inline-block pr-0.5 text-slate-200 cursor-pointer hover:text-white hover:scale-110 transition-all duration-100 ease-in-out"
               >
                 {c}
               </a>

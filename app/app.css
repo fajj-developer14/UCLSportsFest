@@ -5,6 +5,7 @@
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-montserrat: "Montserrat Variable", var(--font-sans), sans-serif;
+  --font-opensans: "Open Sans Variable", var(--font-sans), sans-serif;
 }
 
 html,
@@ -56,4 +57,45 @@ h6 {
   to {
     background-position: 100px 100px;
   }
+}
+
+@keyframes shadowGlow {
+  from {
+    box-shadow: 0 0 25px 1px var(--color-rose-700);
+  }
+  to {
+    box-shadow: 0 0 25px 7px var(--color-rose-700);
+  }
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 25px 1px var(--color-rose-700);
+  }
+  to {
+    text-shadow: 0 0 25px 7px var(--color-rose-700);
+  }
+}
+
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 100;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.animate-shadowGlow {
+  animation: shadowGlow 1s ease-in-out alternate infinite;
+}
+
+.animate-textGlow {
+  animation: textGlow 1s ease-in-out alternate infinite;
+}
+
+.animate-ripple {
+  animation: ripple 500ms ease-out;
 }

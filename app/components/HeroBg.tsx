@@ -1,6 +1,6 @@
 function HeroBg() {
   return (
-    <picture id="HeroBg" className="absolute inset-0">
+    <picture id="HeroBg" className="fixed inset-0">
       <img
         src="../../ucl-bg.jpeg"
         alt="Background of ucl"
