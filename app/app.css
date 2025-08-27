@@ -35,7 +35,7 @@ h6 {
   }
 }
 
-#HeroBg::before {
+/* #HeroBg::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -48,7 +48,7 @@ h6 {
   background-size: 4px 4px;
   opacity: 55%;
   animation: moveSpots 15s linear infinite;
-}
+} */
 
 @keyframes moveSpots {
   from {
