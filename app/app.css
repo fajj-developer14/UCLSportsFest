@@ -37,7 +37,7 @@ h6 {
 
 #HeroBg::before {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: var(--color-gray-800);
   background-image: radial-gradient(
