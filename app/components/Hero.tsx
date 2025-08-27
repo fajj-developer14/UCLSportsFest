@@ -4,7 +4,7 @@ import Button from "./Button";
 function Hero() {
   return (
     <article className="flex flex-col justify-center items-center pt-10 px-5 gap-y-8">
-      <div className="max-w-[350px] w-[50vw] min-w-[200px] lg:max-w-[420px] rounded-sm overflow-hidden animate-shadowGlow">
+      <div className="max-w-[350px] w-[40vw] min-w-[200px] lg:max-w-[420px] rounded-sm overflow-hidden animate-shadowGlow">
         <img src={logo} alt="UCL SportsFest" />
       </div>
       <div className="text-center">
@@ -14,10 +14,12 @@ function Hero() {
         >
           SEPTEMBER
           <div>
-            12 <span className="">•</span> 13 <span className="">•</span> 14
+            25 <span className="">•</span> 26 <span className="">•</span> 27
           </div>
         </h1>
-        <Button>Register</Button>
+        <div className="my-4">
+          <Button>Register</Button>
+        </div>
       </div>
     </article>
   );

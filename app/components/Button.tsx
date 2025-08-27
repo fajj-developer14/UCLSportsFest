@@ -41,7 +41,7 @@ function Button({
 
   return (
     <button
-      className={`my-4 px-7 py-2 text-sm md:px-10 md:py-3 md:text-base uppercase font-montserrat font-medium tracking-wider border-1 border-white/50 rounded-sm cursor-pointer relative overflow-hidden active:scale-95 transition-transform duration-75 ease-in-out`}
+      className={`px-7 py-2 text-sm md:px-10 md:py-3 md:text-base uppercase backdrop-blur-md font-montserrat font-medium tracking-wider border-1 border-white/40 rounded-sm cursor-pointer relative overflow-hidden active:scale-95 transition-transform duration-100 ease-in-out z-10`}
       style={{
         color: textColor,
         backgroundColor: bgColor,
@@ -49,7 +49,7 @@ function Button({
       ref={buttonRef}
       onClick={handleClick}
     >
-      {children}
+      <div className="relative z-10">{children}</div>
       {ripples.map((ripple) => (
         <div
           key={ripple.id}
