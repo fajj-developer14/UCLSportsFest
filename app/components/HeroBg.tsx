@@ -1,10 +1,10 @@
 function HeroBg() {
   return (
-    <picture id="HeroBg" className="fixed inset-0">
+    <picture id="HeroBg">
       <img
         src="../../ucl-bg.jpeg"
         alt="Background of ucl"
-        className="w-full h-full object-cover object-center -z-2"
+        className="fixed inset-0 w-full h-full object-cover object-center -z-2"
       />
     </picture>
   );

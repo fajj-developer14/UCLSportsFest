@@ -41,7 +41,7 @@ function Button({
 
   return (
     <button
-      className={`px-7 py-2 text-sm md:px-10 md:py-3 md:text-base uppercase backdrop-blur-md font-montserrat font-medium tracking-wider border-1 border-white/40 rounded-sm cursor-pointer relative overflow-hidden active:scale-95 transition-transform duration-100 ease-in-out z-10`}
+      className={`px-10 py-3 text-base uppercase backdrop-blur-md font-montserrat font-medium tracking-wider border-1 border-white/40 rounded-sm cursor-pointer relative overflow-hidden active:scale-95 transition-transform duration-100 ease-in-out z-10`}
       style={{
         color: textColor,
         backgroundColor: bgColor,

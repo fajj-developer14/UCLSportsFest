@@ -6,7 +6,7 @@ import "@fontsource-variable/open-sans";
 
 export default function Layout() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-[100dvh]">
       <Navbar />
       <main className="pt-15 pb-10 relative z-10 flex-1">
         <Outlet />
