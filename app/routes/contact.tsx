@@ -16,12 +16,13 @@ function contact() {
             mail={d.mail}
           />
         ))} */}
-        <div>
-          <div className="py-3 px-4 rounded-sm">
+        <div className="relative">
+          <div className="absolute inset-0 bg-white/5" />
+          <div className="py-3 px-4 rounded-sm backdrop-blur-sm">
             <h2 className="text-slate-50 text-xl font-medium tracking-wide">
               Aarij Waheed
             </h2>
-            <h3 className="text-lg text-rose-800 font-medium">Headboy</h3>
+            <h3 className="text-lg text-rose-700 font-medium">Headboy</h3>
             <div className="flex justify-center items-center relative gap-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
