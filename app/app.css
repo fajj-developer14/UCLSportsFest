@@ -48,7 +48,7 @@ h6 {
     transparent 3px
   );
   background-size: 4px 4px;
-  opacity: 60%;
+  opacity: 70%;
   animation: moveSpots 20s linear infinite;
 }
 
