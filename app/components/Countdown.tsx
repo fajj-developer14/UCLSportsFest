@@ -23,7 +23,7 @@ function Countdown() {
   }, []);
   return (
     <div>
-      <ul className="flex text-rose-500 gap-x-5 text-sm md:gap-x-8 md:text-base justify-evenly items-center uppercase font-montserrat font-bold">
+      <ul className="flex text-rose-500 gap-x-4 sm:gap-x-6 text-sm md:gap-x-8 md:text-base justify-evenly items-center uppercase font-montserrat font-bold">
         {labels.map((label, i) => (
           <li key={label}>
             <div>{time[i].length === 1 ? "0" + time[i] : time[i]}</div>

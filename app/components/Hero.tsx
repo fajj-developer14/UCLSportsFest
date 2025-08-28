@@ -10,7 +10,7 @@ function Hero() {
       </div>
       <div className="text-center">
         <h1
-          className="text-slate-50 text-4xl md:text-5xl font-montserrat uppercase animate-textGlow tracking-wide"
+          className="text-slate-50 text-4xl md:text-5xl xl:text-6xl font-montserrat uppercase animate-textGlow tracking-wide"
           style={{ WebkitTextStroke: "0.5px var(--color-rose-700)" }}
         >
           SEPTEMBER

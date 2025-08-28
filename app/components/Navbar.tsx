@@ -1,8 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const categories = ["Home", "Categories", "Schedule", "Register", "Contact"];
+  const sections = [
+    { name: "Home", link: "/" },
+    { name: "Categories", link: "/categories" },
+    { name: "Schedule", link: "/schedule" },
+    { name: "Register", link: "/register" },
+    { name: "contact", link: "/contact" },
+  ];
   return (
     <nav className="w-full bg-rose-950 opacity-85 backdrop-blur-xl px-4 py-4 font-montserrat uppercase fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto flex flex-col items-center overflow-hidden sm:flex-row sm:justify-between sm:items-center">
@@ -29,14 +36,14 @@ function Navbar() {
         <ul
           className={`text-center w-full tracking-wider text-xs sm:flex sm:translate-y-0.5 lg:text-sm justify-end transition-all duration-250 ease-in-out ${isMenuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0 sm:max-h-none sm:opacity-100 "} `}
         >
-          {categories.map((c) => (
+          {sections.map((c, i) => (
             <li className="w-full sm:w-auto sm:pl-2 md:pl-5">
-              <a
-                href="#"
+              <Link
+                to={c.link}
                 className="inline-block pr-0.5 text-slate-200 cursor-pointer hover:text-white hover:scale-110 transition-all duration-100 ease-in-out"
               >
-                {c}
-              </a>
+                {c.name}
+              </Link>
             </li>
           ))}
         </ul>

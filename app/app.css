@@ -10,6 +10,7 @@
 
 html,
 body {
+  font-family: var(--font-opensans);
   @apply bg-white dark:bg-gray-950;
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -47,7 +48,7 @@ h6 {
     transparent 3px
   );
   background-size: 4px 4px;
-  opacity: 55%;
+  opacity: 60%;
   animation: moveSpots 20s linear infinite;
 }
 
