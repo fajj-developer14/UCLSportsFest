@@ -21,7 +21,7 @@ function contact() {
             <h2 className="text-slate-50 text-xl font-medium tracking-wide">
               Aarij Waheed
             </h2>
-            <h3 className="text-lg text-rose-600 font-medium">Headboy</h3>
+            <h3 className="text-lg text-rose-800 font-medium">Headboy</h3>
             <div className="flex justify-center items-center relative gap-x-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
