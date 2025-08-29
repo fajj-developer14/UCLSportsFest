@@ -8,7 +8,7 @@ function Navbar() {
     { name: "Categories", link: "/categories" },
     { name: "Schedule", link: "/schedule" },
     { name: "Register", link: "/register" },
-    { name: "contact", link: "/contact" },
+    { name: "Contact", link: "/contact" },
   ];
   return (
     <nav className="w-full bg-rose-950 opacity-85 backdrop-blur-xl px-4 py-4 font-montserrat uppercase fixed top-0 left-0 right-0 z-50">

@@ -2,21 +2,19 @@ function ContactCard({
   name,
   position,
   phone,
-  mail,
 }: {
   name: string;
   position: string;
   phone: string;
-  mail: string;
 }) {
   return (
     <div>
-      <h3 className="text-2xl sm:text-3xl text-rose-700 font-bold capitalize">
+      <h2 className="text-2xl sm:text-3xl text-rose-700 font-bold capitalize max-w-[15ch] lg:max-w-[25ch] mx-auto">
         {position}
-      </h3>
-      <h2 className="text-slate-50 text-lg  sm:text-xl font-medium tracking-wide mb-1">
-        {name}
       </h2>
+      <h3 className="text-slate-50 text-lg sm:text-xl font-medium tracking-wide mb-1 md:my-2 lg:my-3">
+        {name}
+      </h3>
       <div className="flex justify-center items-center relative gap-x-1.5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +27,7 @@ function ContactCard({
           {phone}
         </p>
       </div>
-      <div className="flex justify-center items-center relative gap-x-1">
+      {/* <div className="flex justify-center items-center relative gap-x-1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 640"
@@ -40,7 +38,7 @@ function ContactCard({
         <p className="text-base sm:text-lg font-medium text-slate-50 my-0.5">
           {mail}
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <div className="flex flex-col min-h-[100dvh] items-center">
       <Navbar />
-      <main className="pt-15 pb-10 relative z-10 flex-1">
+      <main className="pt-15 relative z-10 flex-1">
         <Outlet />
       </main>
       <footer className="bg-rose-950 opacity-85 backdrop-blur-xl p-4 text-white text-center w-full z-2">

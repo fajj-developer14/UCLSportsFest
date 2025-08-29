@@ -9,5 +9,8 @@ export default [
   layout("routes/layout.tsx", [
     index("routes/home.tsx"),
     route("/contact", "./routes/contact.tsx"),
+    route("/register", "./routes/register.tsx"),
+    route("/categories", "./routes/categories.tsx"),
+    route("/schedule", "./routes/schedule.tsx"),
   ]),
 ] satisfies RouteConfig;

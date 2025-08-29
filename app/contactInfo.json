@@ -1,14 +1,22 @@
 [
   {
-    "name": "Aarij Waheed",
-    "position": "headboy",
-    "phone": "0320 1422146",
-    "mail": "name123@gmail.com"
+    "position": "Event Head",
+    "name": "Ammar Jaffar",
+    "phone": "+92 300 4448455"
   },
   {
-    "name": "Aarij Waheed",
-    "position": "headboy",
-    "phone": "0320 1422146",
-    "mail": "name123@gmail.com"
+    "position": "Event Head",
+    "name": "Sobia Sultana",
+    "phone": "+92 333 4487442"
+  },
+  {
+    "position": "Director Registration",
+    "name": "Fatima Anwar",
+    "phone": "+92 347 4254525"
+  },
+  {
+    "position": "Director Registration",
+    "name": "Meerab Butt",
+    "phone": "+92 347 4254525"
   }
 ]
