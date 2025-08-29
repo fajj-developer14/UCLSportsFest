@@ -1,6 +1,7 @@
 import logo from "../assets/logo.jpeg";
 import Button from "./Button";
 import Countdown from "./Countdown";
+import { Link } from "react-router";
 
 function Hero() {
   return (
@@ -22,7 +23,9 @@ function Hero() {
           <Countdown />
         </div>
         <div className="my-4">
-          <Button>Register</Button>
+          <Link to="/register">
+            <Button>Register</Button>
+          </Link>
         </div>
       </div>
     </article>
