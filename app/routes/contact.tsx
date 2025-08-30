@@ -8,7 +8,7 @@ function contact() {
         <h1 className="uppercase text-slate-50 text-4xl md:text-5xl xl:text-6xl tracking-wide font-medium lg:mt-[8vh]">
           contact us
         </h1>
-        <div className="flex flex-col justify-evenly md:flex-row md:flex-wrap items-center mt-6 ms:mt-8 lg:mt-11 gap-y-6 sm:gap-y-8 md:gap-y-15 lg-gap-y-20 md:w-full md:content-center flex-1">
+        <div className="flex flex-col justify-evenly md:flex-row items-center mt-6 ms:mt-8 lg:mt-11 gap-y-6 sm:gap-y-8 md:gap-y-15 lg-gap-y-20 md:w-[70vw] md:content-center flex-1">
           {data.map((d) => (
             <div className="md:w-1/2 text-center">
               <ContactCard
